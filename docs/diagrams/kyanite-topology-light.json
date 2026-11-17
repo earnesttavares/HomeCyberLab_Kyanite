@@ -1,7 +1,20 @@
 hyperweave compose diagram \
-  --spec-file docs/diagrams/kyanite-topology.json \
+  --spec-file /dev/stdin \
   -g primer \
   --variant porcelain \
   --surface inlay \
   --face light \
-  -o docs/diagrams/kyanite-topology-light.svg 
+  -o kyanite-topology.svg <<'JSON'
+{
+  "topology": "dag",
+  "orientation": "horizontal",
+  "title": "Kyanite Home SOC Lab",
+  "nodes": [
+    { "id": "internet", "label": "Internet" },
+    { "id": "router", "label": "ISP Router", "kind": "router" }
+  ],
+  "edges": [
+    { "source": "internet", "target": "router" }
+  ]
+}
+JSON 
