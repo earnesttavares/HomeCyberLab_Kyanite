@@ -1,3 +1,4 @@
+{
   "topology": "dag",
   "orientation": "horizontal",
   "title": "Kyanite Home SOC Lab",
@@ -8,4 +9,4 @@
   "edges": [
     { "source": "internet", "target": "router" }
   ]
- 
+}
