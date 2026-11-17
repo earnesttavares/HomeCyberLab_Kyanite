@@ -42,10 +42,6 @@ Welcome to Kyanite! 👋 My personal Security Operations Center (SOC) lab, creat
 | **Hosted Hypervisor** | VirtualBox | 
 | **Virtual Machines** | Kali Linux, Metasploitable 2 | 
 
-<br>
-
-## 🖇️ Lab Topology 
-
 ```mermaid
 ---
 title: HomeCyberLab_Kyanite Network Topology 
@@ -93,5 +89,7 @@ In Progress...
 
 ---
 
-## 🗐 Project Documentation 
+## 🗐 Project Documentation
+
+## Key Skills Demonstrated 
 
