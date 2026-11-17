@@ -55,15 +55,12 @@ flowchart TD
     Internet --> Router
     Router --> Switch
 
-    Switch --> Laptop["💻 Lenovo IdeaPad Y700"]
-
-    subgraph Laptop ["💻 Lenovo IdeaPad Y700 w/ Kali Linux OS"]
+    subgraph Host["💻 Lenovo IdeaPad Y700 w/ Kali Linux OS"]
         direction LR
-        VBox["📦 VirtualBox"]
-        VM["🧊 Metasploitable 2 VM"]
+        VBox["📦 VirtualBox"] --> VM["🧊 Metasploitable 2 VM"]
     end
 
-    Laptop --> VBox
+    Switch --> VBox
 ```
 
 
