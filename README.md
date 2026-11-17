@@ -12,12 +12,12 @@ Welcome to Kyanite! 👋 My personal Security Operations Center (SOC) lab, creat
 
 ## 📋 Objectives 
 
-&ensp;▢ Build and maintain a functional home SOC environment. <br>
-&ensp;▢ Develop skills in network monitoring, log analysis, and threat detection. <br>
-&ensp;▢ Perform vulnerability assessments to identify and evaluate security weaknesses. <br>
-&ensp;▢ Conduct malware analysis and digital forensics investigations. <br>
-&ensp;▢ Document security findings, investigative processes, and remediation efforts. <br>
-&ensp;▢ Document challenges, resolutions, and key lessons learned to support continuous improvement. <br> 
+&ensp;☑ Build and maintain a functional home SOC environment. <br>
+&ensp;☐ Develop skills in network monitoring, log analysis, and threat detection. <br>
+&ensp;☐ Perform vulnerability assessments to identify and evaluate security weaknesses. <br>
+&ensp;☐ Conduct malware analysis and digital forensics investigations. <br>
+&ensp;☐ Document security findings, investigative processes, and remediation efforts. <br>
+&ensp;☐ Document challenges, resolutions, and key lessons learned to support continuous improvement. <br> 
 
 <br>
 
@@ -46,9 +46,34 @@ Welcome to Kyanite! 👋 My personal Security Operations Center (SOC) lab, creat
 
 ## 🖇️ Lab Topology 
 
-![Kyanite Topology](docs/diagrams/kyanite-topology-light.svg) 
+```mermaid
+flowchart TD
+    Internet["🌐 Internet"]
+    Router["📡 ISP Router"]
+    Switch["🔀 TP-Link Managed Switch"]
 
----
+    Internet --> Router
+    Router --> Switch
+
+    Switch --> Laptop["💻 Lenovo IdeaPad Y700"]
+
+    subgraph Kali ["💻 Kali Linux Host"]
+        VBox["📦 VirtualBox"]
+        VM["🧊 Metasploitable 2 VM"]
+
+        VBox --> VM
+    end
+    Laptop --> Kali
+```
+
+
+<p align="center">
+  <img
+    src="https://hyperweave.app/a/inneraura/dividers/zeropoint"
+    alt="divider"
+    width="100%"
+  />
+</p> 
 
 ## 🖬 Tools & Technologies 
 
