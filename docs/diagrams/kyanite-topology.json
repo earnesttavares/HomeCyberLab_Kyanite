@@ -1,5 +1,6 @@
 {
   "topology": "dag",
+  "orientation": "vertical",
   "title": "Kyanite Home SOC Lab",
   "subtitle": "Current Lab Infrastructure",
   "node_style": "card+glyph",
