@@ -12,7 +12,7 @@ Welcome to Kyanite! 👋 My personal Security Operations Center (SOC) lab, creat
 
 ## 📋 Objectives 
 
-&ensp;☑ Build and maintain a functional home SOC environment. <br>
+&ensp;☒ Build and maintain a functional home SOC environment. <br>
 &ensp;☐ Develop skills in network monitoring, log analysis, and threat detection. <br>
 &ensp;☐ Perform vulnerability assessments to identify and evaluate security weaknesses. <br>
 &ensp;☐ Conduct malware analysis and digital forensics investigations. <br>
@@ -47,6 +47,14 @@ Welcome to Kyanite! 👋 My personal Security Operations Center (SOC) lab, creat
 ## 🖇️ Lab Topology 
 
 ```mermaid
+---
+title: Lab Topology
+config:
+  theme: neo-dark
+  themeVariables:
+    primaryColor:
+---
+
 flowchart TD
     Internet["🌐 Internet"]
     Router["📡 ISP Router"]
@@ -56,8 +64,10 @@ flowchart TD
     Router --> Switch
 
     subgraph Host["💻 Lenovo IdeaPad Y700 (Kali Linux)"]
-    direction LR
-        VBox["📦 VirtualBox"] --> VM["🧊 Metasploitable 2 VM"]
+        direction LR
+        VBox["📦 VirtualBox"]-->VM["🧊 Metasploitable 2 VM"]
+
+        VBox --> VM
     end
 
     Switch --> VBox
@@ -71,6 +81,9 @@ flowchart TD
     width="100%"
   />
 </p> 
+
+<br>
+<br>
 
 ## 🖬 Tools & Technologies 
 
