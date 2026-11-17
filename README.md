@@ -46,19 +46,7 @@ Welcome to Kyanite! 👋 My personal Security Operations Center (SOC) lab, creat
 
 ## 🖇️ Lab Topology 
 
-hyperweave compose diagram \
-  --spec-file docs/diagrams/kyanite-topology.json \
-  -g primer \
-  --variant noir \
-  --surface inlay \
-  --face dark \
-  -o docs/diagrams/kyanite-topology-dark.svg 
-
-  <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/diagrams/kyanite-topology-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="docs/diagrams/kyanite-topology-light.svg">
-  <img alt="Kyanite Home SOC Lab Topology" src="docs/diagrams/kyanite-topology-light.svg">
-</picture>
+![Kyanite Topology](docs/diagrams/kyanite-topology-light.svg) 
 
 ---
 
