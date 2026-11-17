@@ -1,11 +1,3 @@
-hyperweave compose diagram \
-  --spec-file /dev/stdin \
-  -g primer \
-  --variant porcelain \
-  --surface inlay \
-  --face light \
-  -o kyanite-topology.svg <<'JSON'
-{
   "topology": "dag",
   "orientation": "horizontal",
   "title": "Kyanite Home SOC Lab",
@@ -17,4 +9,4 @@ hyperweave compose diagram \
     { "source": "internet", "target": "router" }
   ]
 }
-JSON 
+ 
