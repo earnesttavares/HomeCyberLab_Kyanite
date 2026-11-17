@@ -1,52 +1,20 @@
 {
-  "spec": {
-    "title": "Kyanite Home SOC Lab",
-    "subtitle": "Current Lab Infrastructure",
-    "topology": "dag",
-    "nodes": [
-      {
-        "id": "internet",
-        "label": "Internet"
-      },
-      {
-        "id": "router",
-        "label": "ISP Router",
-        "kind": "router"
-      },
-      {
-        "id": "switch",
-        "label": "TP-Link Managed Switch"
-      },
-      {
-        "id": "host",
-        "label": "Lenovo IdeaPad Y700",
-        "desc": "Kali Linux Host",
-        "role": "hero"
-      },
-      {
-        "id": "vm",
-        "label": "Metasploitable 2",
-        "desc": "Target VM"
-      }
-    ],
-    "edges": [
-      {
-        "source": "internet",
-        "target": "router"
-      },
-      {
-        "source": "router",
-        "target": "switch"
-      },
-      {
-        "source": "switch",
-        "target": "host"
-      },
-      {
-        "source": "host",
-        "target": "vm",
-        "label": "VirtualBox"
-      }
-    ]
-  }
+  "topology": "dag",
+  "title": "Kyanite Test",
+  "nodes": [
+    {
+      "id": "internet",
+      "label": "Internet"
+    },
+    {
+      "id": "host",
+      "label": "Kali"
+    }
+  ],
+  "edges": [
+    {
+      "source": "internet",
+      "target": "host"
+    }
+  ]
 }
