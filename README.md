@@ -48,7 +48,7 @@ Welcome to Kyanite! 👋 My personal Security Operations Center (SOC) lab, creat
 
 ```mermaid
 ---
-title: Lab Topology
+title: HomeCyberLab_Kyanite Network Topology 
 config:
   theme: neo-dark
   themeVariables:
