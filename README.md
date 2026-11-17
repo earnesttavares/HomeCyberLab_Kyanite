@@ -1,52 +1,64 @@
-# HomeCyberLab_Kyanite → 🚧 In Progress
+<p align="center">
+  <img src="images/Kyanite.png" alt="Kyanite Banner" width="100%">
+</p>
 
-A dedicated defensive cybersecurity lab used for network analysis, threat detection, vulnerability assessment, malware analysis, and digital forensics & incident response (DFIR) exercises. 
+<div align="center">
+    <h1>⚗️ Home SOC Lab 🪨</h1>
+</div>
 
-The goal of this lab is to build practical cybersecurity skills using open-source tools and budget-friendly hardware. It also serves as a hands-on learning environment to reinforce concepts and develop the experience I need to prepare for the CompTIA CySA+ exam. 
+Welcome to Kyanite! 👋 My personal Security Operations Center (SOC) lab, created to explore and practice real-world cybersecurity operations from a home environment. Using security tools, attack simulations, and investigative workflows I am developing hands-on experience in threat detection, incident response, log analysis, and digital forensics. This lab serves as both a learning platform and a project portfolio, helping me build practical defensive security skills while preparing for the CompTIA CySA+ certification.    
 
----
+<br>
 
-## 🔵 Objectives 
+## 📋 Objectives 
 
-&ensp;❖ Build a cybersecurity testing environment. <br>
-&ensp;❖ Practice network monitoring and traffic analysis. <br>
-&ensp;❖ Develop vulnerability assessment skills. <br>
-&ensp;❖ Conduct malware and forensic investigations. <br>
-&ensp;❖ Document security projects and findings. <br>
+&ensp;▢ Build and maintain a functional home SOC environment. <br>
+&ensp;▢ Develop skills in network monitoring, log analysis, and threat detection. <br>
+&ensp;▢ Perform vulnerability assessments to identify and evaluate security weaknesses. <br>
+&ensp;▢ Conduct malware analysis and digital forensics investigations. <br>
+&ensp;▢ Document security findings, investigative processes, and remediation efforts. <br>
+&ensp;▢ Document challenges, resolutions, and key lessons learned to support continuous improvement. <br> 
 
----
+<br>
 
-## 🖿 Planned Projects & Exercises 
+## 📅 Planned Projects & Exercises 
 
-&ensp;☐ Snort IDS Deployment <br>
-&ensp;☐ Network Traffic Analysis with Wireshark <br>
-&ensp;☐ Metasploitable 2 Enumeration <br>
-&ensp;☐ Threat Detection <br>
-&ensp;☐ Digital Forensics Investigations <br>
-&ensp;☐ Legacy Network Security Hardware Research (Fortinet FortiGate 60D Firewall) <br>
+&ensp;❖ Deploying and Tuning Snort IDS <br>
+&ensp;❖ Network Traffic Analysis with Wireshark <br>
+&ensp;❖ Vulnerability Assessment of Metasploitable 2 <br>
+&ensp;❖ Threat Detection and Alert Investigation <br>
+&ensp;❖ Digital Forensics and Incident Response <br>
+&ensp;❖ Fortinet FortiGate 60D Firewall Security Hardware Research <br>
+&ensp;❖ Lab Challenges, Troubleshooting, and Lessons Learned <br> 
 
----
-## 🌐︎ Lab Infrastructure  
+<br>
 
-| **Item** | **Specifications** | 
+## ⚒️ Lab Infrastructure  
+
+| **Component** | **Details** | 
 | --- | --- | 
 | **Host Machine** | Secondhand Lenovo IdeaPad Y700 w/ 32GB RAM |
-| **Operating System** | Kali Linux | 
+| **Host Operating System** | Kali Linux | 
 | **Hosted Hypervisor** | VirtualBox | 
 | **Virtual Machines** | Kali Linux, Metasploitable 2 | 
-| **Network Design** | TP-Link Managed Switch |
 
----
+<br>
 
-## 🖧 Lab Topology 
+## 🖇️ Lab Topology 
 
-```mermaid
-graph LR
-    Internet[Internet] --> Router[ISP Router]
-    Router --> Switch[TP-Link Managed Switch]
-    Switch --> Host["Lenovo IdeaPad<br>Kali Linux"]
-    Host -.hosts.-> VM[Metasploitable 2] 
-```
+hyperweave compose diagram \
+  --spec-file docs/diagrams/kyanite-topology.json \
+  -g primer \
+  --variant noir \
+  --surface inlay \
+  --face dark \
+  -o docs/diagrams/kyanite-topology-dark.svg 
+
+  <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/diagrams/kyanite-topology-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="docs/diagrams/kyanite-topology-light.svg">
+  <img alt="Kyanite Home SOC Lab Topology" src="docs/diagrams/kyanite-topology-light.svg">
+</picture>
 
 ---
 
