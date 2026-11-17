@@ -1,7 +1,0 @@
-hyperweave compose diagram \
-  --spec-file docs/diagrams/kyanite-topology.json \
-  -g primer \
-  --variant porcelain \
-  --surface inlay \
-  --face light \
-  -o docs/diagrams/kyanite-topology-light.svg
