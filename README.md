@@ -57,13 +57,13 @@ flowchart TD
 
     Switch --> Laptop["💻 Lenovo IdeaPad Y700"]
 
-    subgraph Kali ["💻 Lenovo IdeaPad <br/> Kali Linux"]
+    subgraph Laptop ["💻 Lenovo IdeaPad Y700 w/ Kali Linux OS"]
         direction LR
         VBox["📦 VirtualBox"]
         VM["🧊 Metasploitable 2 VM"]
     end
 
-    Switch --> VBox
+    Laptop --> VBox
 ```
 
 
