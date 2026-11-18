@@ -10,21 +10,21 @@ Welcome to Kyanite! 👋 My personal Security Operations Center (SOC) lab, creat
 
 ---
 
-### Table of Contents
+## 📖 Table of Contents
 
-- [Objectives](#objectives)
-- [Lab Infrastructure](#lab-infrastructure)
-  - [Network Topology](#network-topology)
-  - [Hardware Specifications](#hardware-specifications)
-- [Security Stack](#security-stack)
-- [Detection & Response Workflows](#detection--response-workflows)
-- [Planned Projects & Exercises](#planned-projects--exercises)
-- [Key Skills Demonstrated](#key-skills-demonstrated)
-- [Lab Scenarios](#lab-scenarios) 
+- 📝 [Objectives](#-objectives)
+- 🛠️ [Lab Infrastructure](https://github.com/earnesttavares/HomeCyberLab_Kyanite/edit/main/README.md#%EF%B8%8F-lab-infrastructure)
+  - 🌐 [Network Topology](#-network-topology)
+  - 💻 [Hardware Specifications](#-hardware-specifications)
+- 🛡️ [Security Stack](https://github.com/earnesttavares/HomeCyberLab_Kyanite/edit/main/README.md#%EF%B8%8F-security-stack)
+- 🚨 [Detection & Response Workflows](#-detection--response-workflows)
+- 🗂️ [Planned Projects & Exercises](https://github.com/earnesttavares/HomeCyberLab_Kyanite/edit/main/README.md#%EF%B8%8F-planned-projects--exercises)
+- 💼 [Key Skills Demonstrated](#-key-skills-demonstrated)
+- 🔬🥼 [Lab Scenarios](#-lab-scenarios) 
 
 ---
 
-## Objectives 
+## 📝 Objectives 
 
 &ensp;☒ Build & maintain a functional home SOC environment. <br>
 
@@ -40,9 +40,9 @@ Welcome to Kyanite! 👋 My personal Security Operations Center (SOC) lab, creat
 
 ---
 
-## Lab Infrastructure  
+## 🛠️ Lab Infrastructure  
 
-### Network Topology 
+### 🌐 Network Topology 
 
 ```mermaid
 --- 
@@ -70,7 +70,7 @@ flowchart TD
     Switch --> VBox
 ```
 
-### Hardware Specifications 
+### 💻 Hardware Specifications 
 | **Component** | **Details** | 
 | --- | --- | 
 | **Host Machine** | Secondhand Lenovo IdeaPad Y700 w/ 32GB RAM |
@@ -80,7 +80,7 @@ flowchart TD
 
 ---
 
-## Security Stack
+## 🛡️ Security Stack
 
 ◇ Wireshark
   
@@ -90,7 +90,7 @@ flowchart TD
 
 ---
 
-## Detection & Response Workflows 
+## 🚨 Detection & Response Workflows 
 
 This lab is designed around the following SOC workflows: 
 
@@ -108,7 +108,7 @@ This lab is designed around the following SOC workflows:
 
 ---
 
-## Planned Projects & Exercises 
+## 🗂️ Planned Projects & Exercises 
 
 &ensp;☐ Deploying & Tuning Snort IDS <br>
 
@@ -126,7 +126,7 @@ This lab is designed around the following SOC workflows:
 
 ---
 
-## Key Skills Demonstrated
+## 💼 Key Skills Demonstrated
 
 ◇ Security Monitoring 
 
@@ -146,7 +146,7 @@ This lab is designed around the following SOC workflows:
 
 ---
 
-## Lab Scenarios
+## 🔬🥼 Lab Scenarios
 
 Scenario 1: Port Scan Detection [Project Documentation Linked]
 
