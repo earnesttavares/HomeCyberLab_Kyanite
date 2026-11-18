@@ -13,7 +13,7 @@ Welcome to Kyanite! 👋 My personal Security Operations Center (SOC) lab, creat
 ## 📖 Table of Contents
 
 - 📝 [Objectives](#-objectives)
-- 🛠️ [Lab Infrastructure](#%EF%B8%8F-lab-infrastructure)
+- 🛠️ Lab Infrastructure
   - 🌐 [Network Topology](#-network-topology)
   - 💻 [Hardware Specifications](#-hardware-specifications)
 - 🛡️ [Security Stack](#%EF%B8%8F-security-stack)
